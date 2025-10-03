@@ -1,0 +1,122 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+:root {
+  --blue-color: #37517e;
+  --heading-font: "Jost", sans-serif;
+}
+.brand,.heading-text{
+  font-family:var(--heading-font);
+}
+navbar .dropdown-menu a {
+  color: black !important;
+}
+.hero {
+  background-color: var(--blue-color);
+}
+.hero a {
+  color: white !important;
+}
+.container {
+  color: white !important;
+}
+.text-blue {
+  color: var(--blue-color);
+}
+
+.gray-line {
+      position: relative;
+      width: 150px;   /* gray line ki width */
+      height: 2px;    /* line ki height */
+      background-color: #ccc; /* gray line */
+      margin: 40px auto; /* center me lane ke liye */
+      border-radius: 2px;
+    }
+
+    .gray-line::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50% ); /* center align */
+      width: 60px;     /* blue line ki width */
+      height: 4px;
+      background-color: #007bff; /* Bootstrap blue */
+      border-radius: 2px;
+    }
+
+.gray-line {
+  position: relative;
+  width: 150px;
+  height: 2px;
+  background-color: gray;
+  margin: 0.5rem auto;
+}
+.blue-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50% , 50%);
+  width: 50%;
+  height: 3px;
+  background-color: var(--bs-info);
+  border-radius: 2px;
+}
+.hero-img-anim {
+  animation: jump 1.5s linear infinite alternate;
+}
+@keyframes jump {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.s-card {
+  transition: all 0.3s linear;
+  
+}
+.s-card img{
+  transition: all 0.3s ease-in;
+}
+
+.s-card:hover {
+  transform: translateY(-10px);
+}
+.card-body{
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  background: var(--bs-info);
+  color:white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+.wp-card{
+  overflow: hidden;
+}
+.card-img-top,.card-body{
+  transition: all 0.3s ease;
+}
+.wp-card:hover .card-img-top{
+  transform: scale(1.1);
+
+}
+.wp-card:hover .card-body{
+transform: translateY(-10px);
+}
